@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=410, initial-scale=1.0" />
+    <title>Sport Legends</title>
+    <link rel="icon" type="image/png" href="./images/logo-sport-legends.svg"/>
+    <link rel="stylesheet" href="./css/index.css" />
+
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <a class="is-active" href="/">
+            <img
+              class="logo"
+              src="./images/logo-sport-legends-secondary.svg"
+              width="105"
+              height="115"
+              alt="logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a  href="/#main">Home</a>
+              </li>
+              <li>
+                <a href="/#legends">Leyendas</a>
+              </li>
+              <li>
+                <a href="/#about-us">Nosotros</a>
+              </li>
+              <li>
+                <a href="/#coming-soon">#ComingSoon</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1ZKit4SM2Q859p1xs8BQTIn-C4jhHg4Mc/view?usp=sharing"
+          >
+            <button class="button">Contáctanos</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+    </div>
+      <form  
+      action="https://formspree.io/f/mwkykrey"
+        method="POST" class="form" id="contact">
+        <div class="form-content">
+          <h2 class="title">Abrimos Pronto!</h2>
+          <p>
+            Recibe un descuento del 20% en todos nuestros productos.
+          </p>
+          <label for="form-name"
+            >Name
+            <input
+              name="name"
+              id="form-name"
+              type="text"
+              placeholder="Name"
+              required
+            />
+          </label>
+          <label for="form-name"
+            >Email
+            <input
+              name="name"
+              id="form-name"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+          <label for="form-name"
+          >Producto de interés
+          <select
+            name="name"
+            id="form-name"
+            type="select"
+            placeholder="Producto"
+            required
+          >
+            <option value="">Selecciona un producto</option>
+            <option value="0">Figura Arnold Schwarzenegger</option>
+            <option value="1">Figura Ronnie Coleman</option>
+            <option value="2">Figura Dorian Yates</option>
+          </select>
+        </label>
+          <button class="button" type="submit">Enviar</button>
+        </div>
+      </form>
+      <a href="mailto:dfcaguazango@gmail.com" id="mailto"></a>
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./Images/logo-sport-legends-secondary.svg" width="105" height="115" alt="logo" />
+          </div>
+          <div class="social">
+              <a class="button-icon" href="tel:+573177000722"
+              ><img src="./icons/icon-phone.svg"
+            /></a>
+            <a class="button-icon" href="mailto:dfcaguazango@gmail.com"
+              ><img src="./icons/icon-important_mail.svg"
+            /></a>
+            <a
+              class="button-icon"
+              target="_blank"
+              href="https://www.linkedin.com/in/david-felipe-caguazango-pulistar-9ab38010a/"
+              ><img src="./icons/linkedin.svg"
+            /></a>
+            <a
+              target="_blank"
+              class="button-icon"
+              href="https://api.whatsapp.com/send?phone==573177000722"
+              ><img src="./icons/whatsapp.svg"
+            /></a>
+          </div>
+          <div class="footer-copyright">
+            <p>By SportLegends.</p>
+            <p>Copyright 2023 - Todos los derechos reservados.</p>
+          </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const $form = document.querySelector("#contact");
+      $form.addEventListener("submit", handleSubmit);
+      async function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        const response=await fetch(this.action,{method:this.method, body:form, headers:{
+          'Accept':'application/json'
+          }
+        });
+        if(response.ok){
+          this.reset();
+          alert('Thanks for contacting me I will reply in short')
+        }
+      }
+    </script>
+  </body>
+</html

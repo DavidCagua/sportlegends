@@ -1,0 +1,21 @@
+.comment {
+  text-align: center;
+  padding-block: 40px;
+  margin-block-start: 15px;
+}
+.comment h1 {
+  font: var(--headline5);
+}
+
+.comment h1 span:nth-of-type(1) {
+  display: block;
+  font-weight: normal;
+}
+.comment h1 span:nth-of-type(2) {
+  display: block;
+  margin-block: 24px;
+}
+.comment img {
+  height: 80px;
+  width: 80px;
+}

@@ -1,0 +1,35 @@
+.legends {
+  display: flex;
+  flex-direction: column;
+}
+
+.legends-wrapper {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.legend-image img {
+  height: 251px;
+  width: 277px;
+}
+@media screen and (min-width: 768px) {
+  .legends {
+    display: flex;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+    gap: 32px;
+  }
+  .legends h2 {
+    order: -1;
+  }
+  .legend-image {
+    text-align: center;
+  }
+}

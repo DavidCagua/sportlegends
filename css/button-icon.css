@@ -1,0 +1,18 @@
+.button-icon {
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.button-icon img {
+  vertical-align: middle;
+  color: #310a90;
+}
+.button-icon i {
+  justify-self: flex-end;
+  color: #310a90;
+}
