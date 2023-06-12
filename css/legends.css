@@ -16,8 +16,10 @@
   align-items: center;
 }
 .legend-image img {
-  height: 251px;
-  width: 277px;
+  height: 351px;
+  width: 317px;
+  border-radius: 12px;
+  background-color: white;
 }
 @media screen and (min-width: 768px) {
   .legends {

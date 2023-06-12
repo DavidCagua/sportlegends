@@ -8,6 +8,10 @@
 .form {
   margin-block-end: 80px;
 }
+.form div{
+  display: flex;
+  flex-direction: column;
+}
 .form p {
   color: var(--white);
   margin: 0;
@@ -18,8 +22,14 @@
 }
 .form label {
   display: flex;
-  flex-direction: column;
   font: var(--button);
+}
+.form .brandingLogo {
+}
+.form .social {
+  flex-direction: row;
+  margin-block: 18px;
+  align-self: center;
 }
 .form input, .form select,
 .form textarea {

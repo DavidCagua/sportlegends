@@ -4,15 +4,17 @@
 .hero-description {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+    gap: 16px;
 }
 .hero-image {
-  text-align: center;
+    text-align: center;
 }
 .hero-image img {
   max-inline-size: 100%;
-  width: 330px;
-  height: 330px;
+  height: 430px;
+  width: 430px;
+  border-radius: 12px;
+  margin-block: 16px;
 }
 .hero h1 {
   font: var(--headline3);
@@ -40,7 +42,7 @@
 }
 @media screen and (min-width: 1024px) {
   .hero-image img {
-    width: 420px;
-    height: 420px;
+    width: 500px;
+    height: 500px;
   }
 }

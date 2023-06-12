@@ -1,0 +1,26 @@
+
+.about-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+.about-us img {
+  margin-block: 32px;
+  border-radius: 12px;
+  height: 350px;
+  clip-path: inset(1px 1px 1px 1px); /* Crop 1 pixel from all sides */
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-us img {
+    height: 150px;
+  }
+}
